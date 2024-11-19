@@ -10,12 +10,15 @@ export interface RouterAppContext {
 	trpcQueryUtils: typeof trpcQueryUtils;
 }
 
-export const Route = createRootRouteWithContext<RouterAppContext>()({
-	component: RootComponent,
-});
+export const Route =
+	createRootRouteWithContext<RouterAppContext>()({
+		component: RootComponent,
+	});
 
 function RootComponent() {
-	const isFetching = useRouterState({ select: (s) => s.isLoading });
+	const isFetching = useRouterState({
+		select: (s) => s.isLoading,
+	});
 
 	return (
 		<>

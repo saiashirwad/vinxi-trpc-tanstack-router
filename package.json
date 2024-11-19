@@ -1,36 +1,40 @@
 {
-  "name": "vinxi-react-trpc-test",
-  "type": "module",
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/bun": "latest"
-  },
-  "scripts": {
-    "dev": "vinxi dev",
-    "build": "vinxi build",
-    "start": "vinxi start"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "@tanstack/react-query": "^5.60.5",
-    "@tanstack/react-query-devtools": "^5.60.5",
-    "@tanstack/react-router": "^1.82.1",
-    "@tanstack/router-devtools": "^1.82.1",
-    "@tanstack/router-plugin": "^1.81.9",
-    "@trpc/client": "^11.0.0-rc.638",
-    "@trpc/react-query": "^11.0.0-rc.638",
-    "@trpc/server": "^11.0.0-rc.638",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vinxi/plugin-references": "^0.0.29",
-    "@vinxi/react": "^0.2.5",
-    "@vitejs/plugin-react": "^4.3.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "superjson": "^2.2.1",
-    "url": "^0.11.4",
-    "vinxi": "^0.4.3"
-  }
+	"name": "vinxi-react-trpc-test",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest"
+	},
+	"scripts": {
+		"dev": "vinxi dev",
+		"build": "vinxi build",
+		"start": "vinxi start"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@hono/trpc-server": "^0.3.2",
+		"@tanstack/react-query": "^5.60.5",
+		"@tanstack/react-query-devtools": "^5.60.5",
+		"@tanstack/react-router": "^1.82.1",
+		"@tanstack/router-devtools": "^1.82.1",
+		"@tanstack/router-plugin": "^1.81.9",
+		"@trpc/client": "^11.0.0-rc.638",
+		"@trpc/react-query": "^11.0.0-rc.638",
+		"@trpc/server": "^11.0.0-rc.638",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"@vinxi/plugin-references": "^0.0.29",
+		"@vinxi/react": "^0.2.5",
+		"@vinxi/router": "^0.4.4",
+		"@vinxi/server-functions": "^0.4.3",
+		"@vitejs/plugin-react": "^4.3.3",
+		"hono": "^4.6.10",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"superjson": "^2.2.1",
+		"url": "^0.11.4",
+		"vinxi": "^0.4.3"
+	}
 }

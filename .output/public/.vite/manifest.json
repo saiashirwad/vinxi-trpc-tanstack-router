@@ -1,0 +1,27 @@
+{
+  "index.html": {
+    "file": "assets/index-BtMJBe7B.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/something.tsx?tsr-split",
+      "src/routes/index.tsx?tsr-split"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split": {
+    "file": "assets/index-LsEUcqFl.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/routes/something.tsx?tsr-split": {
+    "file": "assets/something-DklPHIP8.js",
+    "name": "something",
+    "src": "src/routes/something.tsx?tsr-split",
+    "isDynamicEntry": true
+  }
+}

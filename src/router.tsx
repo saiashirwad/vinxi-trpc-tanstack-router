@@ -1,7 +1,13 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {
+	QueryClient,
+	QueryClientProvider,
+} from "@tanstack/react-query";
 import { createRouter as createTanStackRouter } from "@tanstack/react-router";
 import { httpBatchLink } from "@trpc/client";
-import { createTRPCQueryUtils, createTRPCReact } from "@trpc/react-query";
+import {
+	createTRPCQueryUtils,
+	createTRPCReact,
+} from "@trpc/react-query";
 import superjson from "superjson";
 
 import { routeTree } from "./routeTree.gen";
@@ -33,9 +39,14 @@ export function createRouter() {
 			// @ts-ignore
 			trpcQueryUtils,
 		},
-		defaultPendingComponent: () => <div className={`p-2 text-2xl`}>spin</div>,
+		defaultPendingComponent: () => (
+			<div className={`p-2 text-2xl`}>spin</div>
+		),
 		Wrap: (props: { children: any }) => (
-			<trpc.Provider client={trpcClient} queryClient={queryClient}>
+			<trpc.Provider
+				client={trpcClient}
+				queryClient={queryClient}
+			>
 				<QueryClientProvider client={queryClient}>
 					{props.children}
 				</QueryClientProvider>

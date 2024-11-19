@@ -1,0 +1,8 @@
+{
+  "virtual:$vinxi/handler/lol": {
+    "file": "lol.js",
+    "name": "lol",
+    "src": "virtual:$vinxi/handler/lol",
+    "isEntry": true
+  }
+}
